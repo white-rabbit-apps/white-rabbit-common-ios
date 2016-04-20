@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2E0399BFD00700E6CBD5075B0FA1710EC9651246",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2E0399BFD00700E6CBD5075B0FA1710EC9651246" : 0,
+    "23AF5AA117FA2D501EED8F2E2D47A94DC0561034" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C48588AD-4835-4591-B496-3CC9F4DB75B0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2E0399BFD00700E6CBD5075B0FA1710EC9651246" : "WhiteRabbitCommon\/",
+    "23AF5AA117FA2D501EED8F2E2D47A94DC0561034" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WhiteRabbitCommon",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WhiteRabbitCommon.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:white-rabbit-apps\/white-rabbit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23AF5AA117FA2D501EED8F2E2D47A94DC0561034"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:white-rabbit-apps\/white-rabbit-common-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2E0399BFD00700E6CBD5075B0FA1710EC9651246"
+    }
+  ]
+}
