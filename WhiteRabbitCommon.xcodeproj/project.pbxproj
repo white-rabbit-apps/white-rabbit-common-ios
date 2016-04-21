@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED841DD81CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED841DD71CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets */; };
 		EDA8F3D01CC603C60097D2D8 /* WhiteRabbitCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8F3CF1CC603C60097D2D8 /* WhiteRabbitCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDA8F3DF1CC604160097D2D8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8F3DE1CC604160097D2D8 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED841DD71CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WhiteRabbitAssets.xcassets; sourceTree = "<group>"; };
 		EDA8F3CC1CC603C60097D2D8 /* WhiteRabbitCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhiteRabbitCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA8F3CF1CC603C60097D2D8 /* WhiteRabbitCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhiteRabbitCommon.h; sourceTree = "<group>"; };
 		EDA8F3D11CC603C60097D2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				EDA8F3CF1CC603C60097D2D8 /* WhiteRabbitCommon.h */,
 				EDA8F3D11CC603C60097D2D8 /* Info.plist */,
 				EDA8F3DE1CC604160097D2D8 /* Extensions.swift */,
+				ED841DD71CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets */,
 			);
 			path = WhiteRabbitCommon;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED841DD81CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
