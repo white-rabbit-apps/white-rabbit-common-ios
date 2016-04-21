@@ -184,7 +184,7 @@ public extension UIViewController {
     }
 }
 
-extension UINavigationController {
+public extension UINavigationController {
     func popViewControllerWithCompletionBlock(completion: ()->()) {
         CATransaction.begin()
         self.popViewControllerAnimated(true)
@@ -194,7 +194,7 @@ extension UINavigationController {
 }
 
 
-extension UITabBar {
+public extension UITabBar {
     override public func sizeThatFits(size: CGSize) -> CGSize {
         super.sizeThatFits(size)
         var sizeThatFits = super.sizeThatFits(size)
@@ -210,7 +210,7 @@ public extension Int {
     }
 }
 
-extension Array {
+public extension Array {
     func randomItem() -> Element {
         let index = Int(arc4random_uniform(UInt32(self.count)))
         return self[index]
@@ -248,7 +248,7 @@ extension Array {
     }
 }
 
-extension Dictionary {
+public extension Dictionary {
     mutating func merge<K, V>(dictionaries: Dictionary<K, V>...) {
         for dict in dictionaries {
             for (key, value) in dict {
@@ -273,7 +273,7 @@ public extension UITextField {
     }
 }
 
-extension String {
+public extension String {
     func replace(target: String, withString: String) -> String {
         return self.stringByReplacingOccurrencesOfString(target, withString: withString, options: NSStringCompareOptions.LiteralSearch, range: nil)
     }
@@ -311,7 +311,7 @@ extension String {
     }
 }
 
-extension UILabel {
+public extension UILabel {
     func resizeHeightToFit(heightConstraint: NSLayoutConstraint) {
         let attributes = [NSFontAttributeName : font]
         numberOfLines = 0
@@ -327,7 +327,7 @@ extension UILabel {
     }
 }
 
-extension UIImage {
+public extension UIImage {
     class func imageWithImage(image: UIImage, scaledToScale scale: CGFloat) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(image.size, true, scale)
         let context: CGContextRef = UIGraphicsGetCurrentContext()!
@@ -356,16 +356,16 @@ extension UIImage {
 }
 
 var ActionBlockKey: UInt8 = 0
-typealias BlockButtonActionBlock = (sender: UIButton) -> Void
+public typealias BlockButtonActionBlock = (sender: UIButton) -> Void
 
-class ActionBlockWrapper : NSObject {
+public class ActionBlockWrapper : NSObject {
     var block : BlockButtonActionBlock
     init(block: BlockButtonActionBlock) {
         self.block = block
     }
 }
 
-extension UIButton {
+public extension UIButton {
     func setActionBlock(block: BlockButtonActionBlock) {
         objc_setAssociatedObject(self, &ActionBlockKey, ActionBlockWrapper(block: block), objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         addTarget(self, action: #selector(UIButton.handleActionBlock(_:)), forControlEvents: .TouchUpInside)
