@@ -72,50 +72,8 @@ public extension UIViewController {
     
     
     
-    
-    
     func setUpNavigationBar() {
         self.setUpNavigationBar("")
-    }
-    
-    func setUpTransparentNavigationBar() {
-        self.setUpTransparentNavigationBar("")
-    }
-    
-    func setUpTransparentNavigationBar(title: String) {
-        self.setUpNavigationBar(title)
-        
-        let nav = self.navigationController?.navigationBar
-        nav?.barStyle = UIBarStyle.BlackTranslucent
-        nav?.translucent = true
-        nav?.backgroundColor = UIColor.clearColor()
-        nav?.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-        nav?.shadowImage = UIImage()
-        
-        if var frame = nav?.frame {
-            frame.size.height = 45
-            nav?.frame = frame
-        }
-    }
-    
-    func setUpTransparentMenuBar() {
-        self.setUpTransparentMenuBar("")
-    }
-    
-    func setUpTransparentMenuBar(title: String) {
-        self.setUpMenuBarController(title)
-        
-        let nav = self.navigationController?.navigationBar
-        nav?.barStyle = UIBarStyle.BlackTranslucent
-        nav?.translucent = true
-        nav?.backgroundColor = UIColor.clearColor()
-        nav?.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-        nav?.shadowImage = UIImage()
-        
-        if var frame = nav?.frame {
-            frame.size.height = 45
-            nav?.frame = frame
-        }
     }
     
     func setUpNavigationBar(title: String) {
@@ -138,6 +96,26 @@ public extension UIViewController {
         self.navigationItem.leftBarButtonItem = self.getNavBarItem("back_white", action: #selector(UIViewController.goBack), height: 25, width: 25)
     }
     
+    func setUpTransparentNavigationBar() {
+        self.setUpTransparentNavigationBar("")
+    }
+    
+    func setUpTransparentNavigationBar(title: String) {
+        self.setUpNavigationBar(title)
+        
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.BlackTranslucent
+        nav?.translucent = true
+        nav?.backgroundColor = UIColor.clearColor()
+        nav?.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        nav?.shadowImage = UIImage()
+        
+        if var frame = nav?.frame {
+            frame.size.height = 45
+            nav?.frame = frame
+        }
+    }
+    
     func setUpNavigationBarImage(image: UIImage, height: CGFloat) {
         self.setUpNavigationBarImage(image, height: height, title: "")
     }
@@ -158,6 +136,26 @@ public extension UIViewController {
         nav!.frame = frame
         
         self.navigationItem.leftBarButtonItem = self.getNavBarItem("back_white", action: #selector(UIViewController.goBack), height: 25, width: 25)
+    }
+    
+    func setUpTransparentMenuBar() {
+        self.setUpTransparentMenuBar("")
+    }
+    
+    func setUpTransparentMenuBar(title: String) {
+        self.setUpMenuBarController(title)
+        
+        let nav = self.navigationController?.navigationBar
+        nav?.barStyle = UIBarStyle.BlackTranslucent
+        nav?.translucent = true
+        nav?.backgroundColor = UIColor.clearColor()
+        nav?.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        nav?.shadowImage = UIImage()
+        
+        if var frame = nav?.frame {
+            frame.size.height = 45
+            nav?.frame = frame
+        }
     }
     
     func setUpMenuBarController() {
