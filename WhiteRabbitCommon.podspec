@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "white-rabbit-common-ios"
+  s.name         = "WhiteRabbitCommon"
   s.version      = "0.0.2"
   s.summary      = "Shared resources for White Rabbit apps."
   s.homepage     = "https://github.com/white-rabbit-apps/white-rabbit-common-ios"
