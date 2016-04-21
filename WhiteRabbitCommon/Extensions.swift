@@ -32,7 +32,9 @@ public extension UIViewController {
     }
     
     func getNavBarItem(imageId : String, action : Selector, height : CGFloat, width: CGFloat) -> UIBarButtonItem! {
-        let editImage = UIImage(named: imageId)
+        let bundle = NSBundle(path: "Resources/WhiteRabbitAssets.xcassets")
+        let editImage = UIImage(named: imageId, inBundle: bundle, compatibleWithTraitCollection: nil)
+
         let editButton = UIButton(type: .Custom)
         editButton.setImage(editImage, forState: .Normal)
         editButton.frame = CGRectMake(0, 0, width, height)
@@ -41,7 +43,8 @@ public extension UIViewController {
     }
     
     func getNavBarItem(imageId : String, height : CGFloat, width: CGFloat) -> UIBarButtonItem! {
-        let editImage = UIImage(named: imageId)
+        let bundle = NSBundle(path: "Resources/WhiteRabbitAssets.xcassets")
+        let editImage = UIImage(named: imageId, inBundle: bundle, compatibleWithTraitCollection: nil)
         let editButton = UIButton(type: .Custom)
         editButton.setImage(editImage, forState: .Normal)
         editButton.frame = CGRectMake(0, 0, width, height)
