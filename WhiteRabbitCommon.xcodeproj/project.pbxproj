@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED0734BF1CD1BF810050CCE9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0734BE1CD1BF810050CCE9 /* Parse.framework */; };
+		B529CB1970C0F06EE910CE59 /* Pods_WhiteRabbitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979B8A2EF1414BA871EF80DE /* Pods_WhiteRabbitCommon.framework */; };
 		ED841DD81CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED841DD71CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets */; };
 		EDA8F3D01CC603C60097D2D8 /* WhiteRabbitCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8F3CF1CC603C60097D2D8 /* WhiteRabbitCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDA8F3DF1CC604160097D2D8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8F3DE1CC604160097D2D8 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		979B8A2EF1414BA871EF80DE /* Pods_WhiteRabbitCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhiteRabbitCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF363B79F2155F47431EBFE8 /* Pods-WhiteRabbitCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteRabbitCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteRabbitCommon/Pods-WhiteRabbitCommon.release.xcconfig"; sourceTree = "<group>"; };
+		D68F19865B2BE438D9DDC379 /* Pods-WhiteRabbitCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteRabbitCommon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteRabbitCommon/Pods-WhiteRabbitCommon.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0734BE1CD1BF810050CCE9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
 		ED841DD71CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WhiteRabbitAssets.xcassets; sourceTree = "<group>"; };
 		EDA8F3CC1CC603C60097D2D8 /* WhiteRabbitCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhiteRabbitCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,17 +30,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED0734BF1CD1BF810050CCE9 /* Parse.framework in Frameworks */,
+				B529CB1970C0F06EE910CE59 /* Pods_WhiteRabbitCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0FEB979544D2B2CFB5EE52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D68F19865B2BE438D9DDC379 /* Pods-WhiteRabbitCommon.debug.xcconfig */,
+				BF363B79F2155F47431EBFE8 /* Pods-WhiteRabbitCommon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED0734C01CD1BF880050CCE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED0734BE1CD1BF810050CCE9 /* Parse.framework */,
+				979B8A2EF1414BA871EF80DE /* Pods_WhiteRabbitCommon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -48,6 +61,7 @@
 				ED0734C01CD1BF880050CCE9 /* Frameworks */,
 				EDA8F3CE1CC603C60097D2D8 /* WhiteRabbitCommon */,
 				EDA8F3CD1CC603C60097D2D8 /* Products */,
+				DD0FEB979544D2B2CFB5EE52 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,10 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA8F3D41CC603C60097D2D8 /* Build configuration list for PBXNativeTarget "WhiteRabbitCommon" */;
 			buildPhases = (
+				62EDC94D20B2E572B37ADD11 /* 📦 Check Pods Manifest.lock */,
 				EDA8F3C71CC603C60097D2D8 /* Sources */,
 				EDA8F3C81CC603C60097D2D8 /* Frameworks */,
 				EDA8F3C91CC603C60097D2D8 /* Headers */,
 				EDA8F3CA1CC603C60097D2D8 /* Resources */,
+				0DD0BF0DF01FB7E6AD69964E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +159,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DD0BF0DF01FB7E6AD69964E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhiteRabbitCommon/Pods-WhiteRabbitCommon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62EDC94D20B2E572B37ADD11 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDA8F3C71CC603C60097D2D8 /* Sources */ = {
@@ -249,6 +298,7 @@
 		};
 		EDA8F3D51CC603C60097D2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D68F19865B2BE438D9DDC379 /* Pods-WhiteRabbitCommon.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -265,12 +315,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.whiterabbitapps.WhiteRabbitCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EDA8F3D61CC603C60097D2D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF363B79F2155F47431EBFE8 /* Pods-WhiteRabbitCommon.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -287,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.whiterabbitapps.WhiteRabbitCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

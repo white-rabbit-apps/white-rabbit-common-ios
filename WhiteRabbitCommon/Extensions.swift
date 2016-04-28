@@ -7,32 +7,31 @@
 //
 
 import Foundation
+import Parse
 
-//import Parse
-
-//public extension UIApplicationDelegate {
-//    func initializeWhiteRabbitCommon() {
-//        self.initializeParse()
-//        self.initializeUI()
-//    }
-//    
-//    func initializeParse() {
-//        Parse.enableLocalDatastore()
-//        PFUser.enableRevocableSessionInBackground()
-//        
-//        Parse.initializeWithConfiguration(ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
-//            configuration.applicationId = "IWr9xzTirLbjXH80mbTCtT9lWB73ggQe3PhA6nPg"
-//            configuration.clientKey = "Yxdst3hz76abMoAwG7FLh0NwDmPvYHFDUPao9WJJ"
-//            configuration.server = "http://www.whiterabbitapps.net/api"
-//        }))
-//    }
-//    
-//    func initializeUI() {
-//        UILabel.appearance().substituteFontName = "Avenir"
-//        UITabBar.appearance().barTintColor = UIColor.mainColor()
-//        UITabBar.appearance().tintColor = UIColor.whiteColor()
-//    }
-//}
+public extension UIApplicationDelegate {
+    func initializeWhiteRabbitCommon() {
+        self.initializeParse()
+        self.initializeUI()
+    }
+    
+    func initializeParse() {
+        Parse.enableLocalDatastore()
+        PFUser.enableRevocableSessionInBackground()
+        
+        Parse.initializeWithConfiguration(ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+            configuration.applicationId = "IWr9xzTirLbjXH80mbTCtT9lWB73ggQe3PhA6nPg"
+            configuration.clientKey = "Yxdst3hz76abMoAwG7FLh0NwDmPvYHFDUPao9WJJ"
+            configuration.server = "http://www.whiterabbitapps.net/api"
+        }))
+    }
+    
+    func initializeUI() {
+        UILabel.appearance().substituteFontName = "Avenir"
+        UITabBar.appearance().barTintColor = UIColor.mainColor()
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+    }
+}
 
 public extension UIColor {
     public class func mainColor() -> UIColor {
