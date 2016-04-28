@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0734BF1CD1BF810050CCE9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0734BE1CD1BF810050CCE9 /* Parse.framework */; };
 		ED841DD81CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED841DD71CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets */; };
 		EDA8F3D01CC603C60097D2D8 /* WhiteRabbitCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8F3CF1CC603C60097D2D8 /* WhiteRabbitCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDA8F3DF1CC604160097D2D8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8F3DE1CC604160097D2D8 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED0734BE1CD1BF810050CCE9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
 		ED841DD71CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WhiteRabbitAssets.xcassets; sourceTree = "<group>"; };
 		EDA8F3CC1CC603C60097D2D8 /* WhiteRabbitCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhiteRabbitCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA8F3CF1CC603C60097D2D8 /* WhiteRabbitCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhiteRabbitCommon.h; sourceTree = "<group>"; };
@@ -25,15 +27,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0734BF1CD1BF810050CCE9 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED0734C01CD1BF880050CCE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED0734BE1CD1BF810050CCE9 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDA8F3C21CC603C60097D2D8 = {
 			isa = PBXGroup;
 			children = (
+				ED0734C01CD1BF880050CCE9 /* Frameworks */,
 				EDA8F3CE1CC603C60097D2D8 /* WhiteRabbitCommon */,
 				EDA8F3CD1CC603C60097D2D8 /* Products */,
 			);
@@ -243,6 +255,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = WhiteRabbitCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -261,6 +277,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = WhiteRabbitCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

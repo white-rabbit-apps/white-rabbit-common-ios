@@ -8,6 +8,32 @@
 
 import Foundation
 
+//import Parse
+
+//public extension UIApplicationDelegate {
+//    func initializeWhiteRabbitCommon() {
+//        self.initializeParse()
+//        self.initializeUI()
+//    }
+//    
+//    func initializeParse() {
+//        Parse.enableLocalDatastore()
+//        PFUser.enableRevocableSessionInBackground()
+//        
+//        Parse.initializeWithConfiguration(ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+//            configuration.applicationId = "IWr9xzTirLbjXH80mbTCtT9lWB73ggQe3PhA6nPg"
+//            configuration.clientKey = "Yxdst3hz76abMoAwG7FLh0NwDmPvYHFDUPao9WJJ"
+//            configuration.server = "http://www.whiterabbitapps.net/api"
+//        }))
+//    }
+//    
+//    func initializeUI() {
+//        UILabel.appearance().substituteFontName = "Avenir"
+//        UITabBar.appearance().barTintColor = UIColor.mainColor()
+//        UITabBar.appearance().tintColor = UIColor.whiteColor()
+//    }
+//}
+
 public extension UIColor {
     public class func mainColor() -> UIColor {
         return UIColor(red: 0/255, green: 42/255, blue: 79/255, alpha: 1.0)
@@ -96,7 +122,7 @@ public extension UIViewController {
         
         self.navigationItem.title = title
         
-        self.navigationItem.leftBarButtonItem = self.getNavBarItem("back_white", action: #selector(UIViewController.goBack), height: 25, width: 25)
+        self.navigationItem.leftBarButtonItem = self.getNavBarItem("back_white", action: "goBack", height: 25, width: 25)
     }
     
     func setUpTransparentNavigationBar() {
@@ -138,7 +164,7 @@ public extension UIViewController {
         frame.size.height = height
         nav!.frame = frame
         
-        self.navigationItem.leftBarButtonItem = self.getNavBarItem("back_white", action: #selector(UIViewController.goBack), height: 25, width: 25)
+        self.navigationItem.leftBarButtonItem = self.getNavBarItem("back_white", action: "goBack", height: 25, width: 25)
     }
     
     func setUpTransparentMenuBar() {
@@ -168,13 +194,13 @@ public extension UIViewController {
     func setUpMenuBarController(title: String) {
         self.setUpNavigationBar(title)
         
-        self.navigationItem.leftBarButtonItem = self.getNavBarItem("menu_white", action: #selector(UIViewController.showMenu), height: 20, width: 25)
+        self.navigationItem.leftBarButtonItem = self.getNavBarItem("menu_white", action: "showMenu", height: 20, width: 25)
     }
     
     func setUpMenuBarImageController(image: UIImage, height: CGFloat, title: String) {
         self.setUpNavigationBarImage(image, height: height, title: title)
         
-        self.navigationItem.leftBarButtonItem = self.getNavBarItem("menu_white", action: #selector(UIViewController.showMenu), height: 20, width: 25)
+        self.navigationItem.leftBarButtonItem = self.getNavBarItem("menu_white", action: "showMenu", height: 20, width: 25)
     }
     
     func setUpMenuBarImageController(image: UIImage, height: CGFloat) {
@@ -403,7 +429,7 @@ public class ActionBlockWrapper : NSObject {
 public extension UIButton {
     func setActionBlock(block: BlockButtonActionBlock) {
         objc_setAssociatedObject(self, &ActionBlockKey, ActionBlockWrapper(block: block), objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        addTarget(self, action: #selector(UIButton.handleActionBlock(_:)), forControlEvents: .TouchUpInside)
+        addTarget(self, action: "handleActionBlock:", forControlEvents: .TouchUpInside)
     }
     
     func handleActionBlock(sender: UIButton) {

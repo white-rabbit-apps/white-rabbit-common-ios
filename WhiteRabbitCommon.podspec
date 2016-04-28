@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WhiteRabbitCommon"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "Shared resources for White Rabbit apps."
   s.homepage     = "https://github.com/white-rabbit-apps/white-rabbit-common-ios"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -14,5 +14,4 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency 'Parse'
-  s.dependency 'ParseUI'
 end
