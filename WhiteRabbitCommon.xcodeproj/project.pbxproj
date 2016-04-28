@@ -17,7 +17,6 @@
 		979B8A2EF1414BA871EF80DE /* Pods_WhiteRabbitCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhiteRabbitCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF363B79F2155F47431EBFE8 /* Pods-WhiteRabbitCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteRabbitCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteRabbitCommon/Pods-WhiteRabbitCommon.release.xcconfig"; sourceTree = "<group>"; };
 		D68F19865B2BE438D9DDC379 /* Pods-WhiteRabbitCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteRabbitCommon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteRabbitCommon/Pods-WhiteRabbitCommon.debug.xcconfig"; sourceTree = "<group>"; };
-		ED0734BE1CD1BF810050CCE9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Frameworks/Parse.framework; sourceTree = "<group>"; };
 		ED841DD71CC8D7B600A9E579 /* WhiteRabbitAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WhiteRabbitAssets.xcassets; sourceTree = "<group>"; };
 		EDA8F3CC1CC603C60097D2D8 /* WhiteRabbitCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhiteRabbitCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA8F3CF1CC603C60097D2D8 /* WhiteRabbitCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhiteRabbitCommon.h; sourceTree = "<group>"; };
@@ -49,7 +48,6 @@
 		ED0734C01CD1BF880050CCE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED0734BE1CD1BF810050CCE9 /* Parse.framework */,
 				979B8A2EF1414BA871EF80DE /* Pods_WhiteRabbitCommon.framework */,
 			);
 			name = Frameworks;

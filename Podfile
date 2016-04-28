@@ -5,4 +5,5 @@ inhibit_all_warnings!
 
 target 'WhiteRabbitCommon' do
     pod 'Parse'
+    pod 'ParseUI'
 end
