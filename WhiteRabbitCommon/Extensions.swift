@@ -8,6 +8,7 @@
 
 import Foundation
 import Parse
+import AudioToolbox
 
 public extension UIApplicationDelegate {
     func initializeWhiteRabbitCommon() {
@@ -48,6 +49,26 @@ public extension UIColor {
 }
 
 public extension UIViewController {
+    func playSound(soundName: String) {
+        if let soundURL = NSBundle.mainBundle().URLForResource(soundName, withExtension: "caf") {
+            var mySound: SystemSoundID = 0
+            AudioServicesCreateSystemSoundID(soundURL, &mySound)
+            AudioServicesPlaySystemSound(mySound);
+        }
+    }
+    
+    func showLoader() {
+        self.hideLoader()
+        let filename = Int.random(1, upper: 20)
+        
+        GiFHUD.setGif("gif/" + String(filename) + ".gif")
+        GiFHUD.show()
+    }
+    
+    func hideLoader() {
+        GiFHUD.dismiss()
+    }
+    
     func goBack() {
         self.navigationController?.popViewControllerAnimated(true)
     }

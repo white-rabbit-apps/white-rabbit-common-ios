@@ -10,11 +10,12 @@ Pod::Spec.new do |s|
 
   s.source_files = 'WhiteRabbitCommon/*.{h,swift}'
   s.public_header_files   = 'WhiteRabbitCommon/*.h'
-  s.resource_bundles = { 'WhiteRabbitCommon' => ['WhiteRabbitCommon/*.xcassets'] }
+  s.resource_bundles = { 'WhiteRabbitCommon' => ['WhiteRabbitCommon/*.xcassets', 'WhiteRabbitCommon/gif/*'] }
 
   s.frameworks   = ['UIKit', 'Foundation']
   s.requires_arc = true
 
   s.dependency 'Parse'
   s.dependency 'ParseUI'
+  s.dependency 'Kingfisher'
 end
